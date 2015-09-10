@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.bah</groupId>
   <artifactId>geterdun</artifactId>
-  <version>1.1.1</version>
+  <version>1.1.1-fixed</version>
   <name>Get'r Done</name>
   <description>A simple framework for getting idempotent actions done, in a reliable way.</description>
   <url>http://github.com/booz-allen-hamilton/geterdun</url>
@@ -27,10 +27,16 @@
     <url>https://github.com/booz-allen-hamilton/geterdun/</url>
   </scm>
   <distributionManagement>
-    <snapshotRepository>
+    <repository>
+      <id>huron</id>
+      <name>Huron Private Repository</name>
+      <url>http://54.40.237.254/nexus/content/repositories/huron</url>
+    </repository>
+    
+    <!--<snapshotRepository>
       <id>ossrh</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-    </snapshotRepository>
+    </snapshotRepository> -->
   </distributionManagement>
   <properties>
     <koloboke.version>0.6</koloboke.version>
